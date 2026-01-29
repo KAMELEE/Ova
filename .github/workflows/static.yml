@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OVA | #I_AM_NOT_PLASTIC - حلول تغليف مستدامة</title>
+    
+    <!-- الخطوط والأنيميشن -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        :root {
+            --ova-green: #2D5A43; /* أخضر طبيعي عميق */
+            --ova-blue: #00AEEF;  /* اللون الأزرق في شعار OVA */
+            --ova-cream: #F9F8F4;
+            --ova-charcoal: #1A1A1A;
+        }
+
+        body {
+            font-family: 'IBM Plex Sans Arabic', sans-serif;
+            background-color: var(--ova-cream);
+            color: var(--ova-charcoal);
+            scroll-behavior: smooth;
+        }
+
+        /* Hero Video Section */
+        .hero-video-container {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            z-index: -1; overflow: hidden;
+        }
+        .hero-video-container video {
+            min-width: 100%; min-height: 100%;
+            object-fit: cover; filter: brightness(0.6);
+        }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(15px);
+        }
+
+        .btn-ova {
+            background-color: var(--ova-green);
+            color: white;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .btn-ova:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(45, 90, 67, 0.2);
+        }
+
+        .stat-card {
+            background: white;
+            border-bottom: 4px solid var(--ova-green);
+        }
+
+        /* Comparison Table Style */
+        .comparison-tag {
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: bold;
+        }
+        .tag-yes { background: #D1FAE5; color: #065F46; }
+        .tag-no { background: #FEE2E2; color: #991B1B; }
+
+        .product-grid-item {
+            transition: all 0.3s ease;
+            border: 1px solid #eee;
+        }
+        .product-grid-item:hover {
+            border-color: var(--ova-green);
+            background: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="fixed w-full z-50 glass-nav py-4 px-6 md:px-16 flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <span class="text-2xl font-bold tracking-tighter text-green-900">OVA</span>
+            <span class="text-[10px] text-gray-400 leading-none">BY<br>GREEN RUYA</span>
+        </div>
+        <nav class="hidden lg:flex gap-8 text-sm font-medium">
+            <a href="#vision" class="hover:text-green-700">رؤيتنا</a>
+            <a href="#products" class="hover:text-green-700">المنتجات</a>
+            <a href="#certificates" class="hover:text-green-700">الشهادات</a>
+            <a href="#contact" class="hover:text-green-700">تواصل معنا</a>
+        </nav>
+        <div class="flex items-center gap-4">
+            <a href="#contact" class="btn-ova px-6 py-2 rounded-full text-sm">طلب عرض سعر</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center text-center px-4 overflow-hidden">
+        <div class="hero-video-container">
+            <!-- فيديو vela.eco كما طلبت -->
+            <video autoplay muted loop playsinline>
+                <source src="https://vela.eco/wp-content/uploads/2023/04/Vela-Hero-Video.mp4" type="video/mp4">
+            </video>
+        </div>
+        
+        <div class="z-10" data-aos="fade-up">
+            <h2 class="text-white text-xl md:text-2xl font-light mb-4 tracking-[0.2em]">COMPANY OVERVIEW 2025</h2>
+            <h1 class="text-6xl md:text-9xl font-bold text-white mb-6 tracking-tighter">
+                #I AM <span class="text-transparent" style="-webkit-text-stroke: 1px white;">NOT</span> PLASTIC
+            </h1>
+            <p class="text-white text-lg md:text-2xl max-w-2xl mx-auto font-light opacity-90">
+                نستبدل كيسًا بلاستيكيًا واحدًا في كل مرة بحلول صديقة للبيئة
+            </p>
+            <div class="mt-10 flex flex-wrap justify-center gap-4">
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 px-6 py-2 rounded-full text-white text-sm">صنع في السعودية</div>
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 px-6 py-2 rounded-full text-white text-sm">نشا الكاسافا</div>
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 px-6 py-2 rounded-full text-white text-sm">رؤية 2030</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Did You Know? (Stats from PDF Page 2) -->
+    <section class="py-24 bg-white px-6 md:px-16">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-center text-4xl font-bold mb-16" data-aos="fade-up">هل تعلم؟</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="stat-card p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-4xl font-bold text-red-600 mb-4">+1M</div>
+                    <p class="text-gray-600 font-medium">طائر بحري يموت سنوياً بسبب التلوث البلاستيكي في المحيطات.</p>
+                </div>
+                <div class="stat-card p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-4xl font-bold text-green-700 mb-4">500-1000</div>
+                    <p class="text-gray-600 font-medium">سنة هي المدة التي يحتاجها البلاستيك لكي يتحلل كلياً.</p>
+                </div>
+                <div class="stat-card p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-4xl font-bold text-blue-600 mb-4">83%</div>
+                    <p class="text-gray-600 font-medium">من مياه الشرب وجدت ملوثة بجزيئات البلاستيك الدقيقة.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table (from PDF Page 2) -->
+    <section class="py-20 bg-stone-50 px-6">
+        <div class="max-w-4xl mx-auto bg-white rounded-3xl shadow-sm overflow-hidden border border-stone-100" data-aos="zoom-in">
+            <table class="w-full text-right">
+                <thead class="bg-green-900 text-white">
+                    <tr>
+                        <th class="p-6">المواصفات</th>
+                        <th class="p-6 text-center">أكياس OVA</th>
+                        <th class="p-6 text-center">أكياس البلاستيك</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-stone-100">
+                    <tr>
+                        <td class="p-5 font-bold">قابلة للذوبان في الماء (80 درجة)</td>
+                        <td class="p-5 text-center"><span class="comparison-tag tag-yes">نعم</span></td>
+                        <td class="p-5 text-center"><span class="comparison-tag tag-no">لا</span></td>
+                    </tr>
+                    <tr>
+                        <td class="p-5 font-bold">قابلة للتحلل والتسميد</td>
+                        <td class="p-5 text-center"><span class="comparison-tag tag-yes">نعم</span></td>
+                        <td class="p-5 text-center"><span class="comparison-tag tag-no">لا</span></td>
+                    </tr>
+                    <tr>
+                        <td class="p-5 font-bold">آمنة للاستهلاك الحيوي</td>
+                        <td class="p-5 text-center"><span class="comparison-tag tag-yes">نعم</span></td>
+                        <td class="p-5 text-center"><span class="comparison-tag tag-no">لا</span></td>
+                    </tr>
+                    <tr>
+                        <td class="p-5 font-bold">تحتوي على جزيئات ميكرو-بلاستيك</td>
+                        <td class="p-5 text-center"><span class="comparison-tag tag-no">لا</span></td>
+                        <td class="p-5 text-center"><span class="comparison-tag tag-yes">نعم</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Product Showcase (from Tables in PDF) -->
+    <section id="products" class="py-24 px-6 md:px-16">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+            <div class="max-w-xl">
+                <h2 class="text-5xl font-bold text-green-900 mb-4">منتجاتنا المستدامة</h2>
+                <p class="text-gray-500 italic">نستخدم مواد متجددة، معاد تدويرها، وقابلة للتحلل لتقليل الأثر البيئي.</p>
+            </div>
+            <div class="flex gap-2">
+                <span class="px-4 py-1 bg-green-100 text-green-800 rounded-full text-xs font-bold">B2B Ready</span>
+                <span class="px-4 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-bold">Food Grade</span>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Product Category 1 -->
+            <div class="product-grid-item p-6 rounded-2xl" data-aos="fade-up">
+                <h3 class="text-xl font-bold mb-4">أطقم خدمة (Pulp Trays)</h3>
+                <div class="space-y-3 text-sm text-gray-600">
+                    <div class="flex justify-between border-b pb-2"><span>Deep Pulp Tray</span> <span class="font-mono text-[10px]">PA6130F300N</span></div>
+                    <div class="flex justify-between border-b pb-2"><span>Buddha Bowl (750ml)</span> <span class="font-mono text-[10px]">PPULP12024</span></div>
+                    <div class="flex justify-between border-b pb-2"><span>Hinged 3-Comp</span> <span class="font-mono text-[10px]">PHG3C750SQ</span></div>
+                </div>
+            </div>
+
+            <!-- Product Category 2 -->
+            <div class="product-grid-item p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-xl font-bold mb-4">أكياس OVA الخاصة</h3>
+                <div class="space-y-3 text-sm text-gray-600">
+                    <div class="flex justify-between border-b pb-2"><span>T-Shirt Bags (Cassava)</span> <span class="text-green-600">تحلل كامل</span></div>
+                    <div class="flex justify-between border-b pb-2"><span>Griphole Bags</span> <span class="text-green-600">غير سام</span></div>
+                    <div class="flex justify-between border-b pb-2"><span>Garbage Bags (75x90cm)</span> <span class="text-green-600">قابلة للتسميد</span></div>
+                </div>
+            </div>
+
+            <!-- Product Category 3 -->
+            <div class="product-grid-item p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="text-xl font-bold mb-4">أدوات مائدة وشفاطات</h3>
+                <div class="space-y-3 text-sm text-gray-600">
+                    <div class="flex justify-between border-b pb-2"><span>Sugarcane Straws</span> <span class="font-mono text-[10px]">8mm x 22cm</span></div>
+                    <div class="flex justify-between border-b pb-2"><span>Bamboo Cutlery Kit</span> <span class="font-mono text-[10px]">4-in-1 Kit</span></div>
+                    <div class="flex justify-between border-b pb-2"><span>Butterfly Lidless Cups</span> <span class="font-mono text-[10px]">4-22 oz</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Partners (from PDF Page 16) -->
+    <section class="py-24 bg-green-900 text-white px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12">شركاء النجاح حول العالم</h2>
+            <p class="max-w-2xl mx-auto opacity-70 mb-16">نختار موردين عالميين لضمان أعلى معايير الجودة وتقليل البصمة الكربونية.</p>
+            <div class="flex flex-wrap justify-center gap-8 md:gap-16 opacity-80">
+                <div class="flex flex-col items-center">
+                    <span class="text-2xl font-bold">السعودية</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <span class="text-2xl font-bold">الإمارات</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <span class="text-2xl font-bold">اليونان</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <span class="text-2xl font-bold">السويد</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <span class="text-2xl font-bold">فرنسا</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <span class="text-2xl font-bold">إسبانيا</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <span class="text-2xl font-bold">الصين</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="bg-white py-20 px-6 md:px-16 border-t border-stone-100">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20">
+            <div>
+                <h2 class="text-4xl font-bold text-green-900 mb-8">لنبدأ التغيير معاً.</h2>
+                <div class="space-y-4 text-gray-600">
+                    <p class="flex items-center gap-3">📍 برج مزايا، مكتب رقم 901، طريق العليا، الرياض.</p>
+                    <p class="flex items-center gap-3">📧 info@ovapac.com</p>
+                    <p class="flex items-center gap-3">📞 +966 583 000 068</p>
+                </div>
+            </div>
+            <form class="grid grid-cols-1 gap-4">
+                <input type="text" placeholder="الاسم" class="p-4 bg-stone-50 rounded-xl outline-none focus:ring-1 focus:ring-green-500">
+                <input type="email" placeholder="البريد الإلكتروني" class="p-4 bg-stone-50 rounded-xl outline-none focus:ring-1 focus:ring-green-500">
+                <textarea placeholder="رسالتك أو طلب عرض سعر لمنتج معين" class="p-4 bg-stone-50 rounded-xl h-32 outline-none focus:ring-1 focus:ring-green-500"></textarea>
+                <button class="btn-ova py-4 rounded-xl font-bold">إرسال الاستفسار</button>
+            </form>
+        </div>
+        <div class="mt-20 pt-8 border-t text-center text-xs text-gray-400">
+            &copy; 2025 OVA - المملوكة لشركة Green Ruya LLC. جميع الحقوق محفوظة.
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
+</body>
+</html>
